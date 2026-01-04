@@ -1,0 +1,386 @@
+/* Container for dashboard */
+.dashboard-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Left panel: user info + new game button */
+.left-panel {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* User bar */
+.user-bar {
+  background: #222;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Buttons inside user bar */
+.user-bar .small-button {
+  margin-top: 5px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+
+.user-bar .small-button:hover {
+  background-color: #0056b3;
+}
+
+/* New Game button */
+.new-game-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.new-game-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.new-game-button:hover {
+  background-color: #45a049;
+}
+
+/* Right panel: tables */
+.right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Tables */
+.table-section {
+  width: 100%;
+}
+
+.table-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+.custom-table th {
+  background: #333;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+.custom-table tr {
+  background: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+
+.custom-table td {
+  padding: 10px;
+}
+
+/* Auth pages (login/register) */
+.auth-container {
+  width: 300px;
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.auth-container input {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.auth-container button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+}
+
+.admin-controls {
+  display: flex;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.admin-box {
+  background: #222;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: 280px;
+}
+
+.dropdown {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+}
+
+.remove-button {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: #c9302c;
+}
+
+.organization-container {
+  padding: 20px;
+}
+
+.org-section {
+  margin-top: 20px;
+  padding: 15px;
+  background: #202020;
+  border-radius: 10px;
+}
+
+.org-section select,
+.org-section input,
+.org-section textarea {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  background: #1a1a1a;
+  color: white;
+  border: 1px solid #444;
+}
+
+.org-section button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.org-section button:hover {
+  background: #005fcc;
+}
+
+/* ========================= */
+/*        PAGE LAYOUT        */
+/* ========================= */
+
+.organization-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  color: #333;
+}
+
+p {
+  color: #555;
+}
+
+.back-button {
+  background: #555;
+  color: white;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.2s;
+}
+
+.back-button:hover {
+  background: #333;
+}
+
+/* ========================= */
+/*         TABLES            */
+/* ========================= */
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 15px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.08);
+}
+
+.styled-table thead {
+  background: #333;
+  color: white;
+  text-align: left;
+}
+
+.styled-table thead th {
+  padding: 14px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.styled-table tbody tr {
+  background: #fafafa;
+  transition: 0.2s;
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+.styled-table tbody tr:hover {
+  background: #e6e6e6;
+}
+
+.styled-table td {
+  padding: 12px;
+  color: #444;
+}
+
+/* ========================= */
+/*       ADMIN PANEL         */
+/* ========================= */
+
+.admin-panel {
+  margin-top: 40px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+}
+
+.admin-panel h2 {
+  margin-bottom: 20px;
+}
+
+.control-section {
+  margin-bottom: 25px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+}
+
+.control-section h3 {
+  margin-bottom: 10px;
+}
+
+select, input[type="text"], input[type="number"], input[type="date"] {
+  padding: 10px;
+  width: 250px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  background: #fff;
+  transition: border-color 0.2s;
+}
+
+select:focus, input:focus {
+  border-color: #555;
+  outline: none;
+}
+
+/* ========================= */
+/*          BUTTONS          */
+/* ========================= */
+
+button {
+  background: #444;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.25s;
+}
+
+button:hover {
+  background: #222;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* ========================= */
+/*    TOURNAMENT FORM        */
+/* ========================= */
+
+.tournament-form form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.tournament-form input {
+  margin-bottom: 10px;
+}
+
+.tournament-form button {
+  width: 150px;
+  margin-top: 10px;
+}
+
+/* ========================= */
+/*       RESPONSIVE          */
+/* ========================= */
+
+@media (max-width: 700px) {
+  .organization-container {
+    padding: 20px;
+  }
+
+  select, input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .tournament-form form {
+    width: 100%;
+  }
+
+  .styled-table td, .styled-table th {
+    padding: 10px;
+  }
+}
